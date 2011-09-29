@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>ClothStore</title>
-  <%= stylesheet_link_tag :all %>
+  <title>Cloth Store | <%= @title %></title>
+	<%= csrf_meta_tag %>
+  <%= render 'layouts/stylesheets' %>
   <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+
 </head>
+
 <body>
-
-<%= yield %>
-
+	<div class = "container">
+		<%= render 'layouts/header' %>
+		<%= render 'layouts/body' %>
+		<%= yield %>
+	</div>
 </body>
 </html>
