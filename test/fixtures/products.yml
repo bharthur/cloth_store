@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id          :integer         not null, primary key
+#  name        :string(255)
+#  desc        :text
+#  price       :integer
+#  is_special  :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#  category_id :integer
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  desc: MyText
+  price: 1
+  is_special: MyString
+
+two:
+  name: MyString
+  desc: MyText
+  price: 1
+  is_special: MyString

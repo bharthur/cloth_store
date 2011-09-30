@@ -1,0 +1,46 @@
+/*Body*/
+body{
+background-color:white;
+width:900px;
+margin:auto;
+}
+
+/*Container*/
+.container{
+background-color:white;
+min-height:540px;
+margin:auto;
+}
+
+
+/*Links Decoration/Decoration*/
+a{
+text-decoration:none;
+}
+
+
+.nav li a{
+font-weight: bold;
+color: white;
+font-family: Arial, sans-serif;
+font-size: 14px;
+}
+
+li{
+display:inline;
+}
+
+
+/*Navigation*/
+.nav{
+background: url('/images/topnavbg.gif') repeat-x ;
+color: #FFFFFF;
+font-family: Tahoma;
+font-size: 14px;
+width: 890px;
+word-spacing:10px;
+-moz-border-radius: 10px;
+}
+
+
+
