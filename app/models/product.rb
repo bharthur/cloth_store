@@ -18,6 +18,12 @@ class Product < ActiveRecord::Base
 	
 	belongs_to :category
 	
+	has_and_belongs_to_many :occasions, :join_table => :occasions_products
+	
+	has_many :sizes
+	
+	has_many :images
+	
 	validates :name, :presence => true,
 										:length => {:maximum => 50}
 										
@@ -28,7 +34,5 @@ class Product < ActiveRecord::Base
 										:numericality => true
 										
 	validates :is_special, :presence => true
-	
-	
 	
 end

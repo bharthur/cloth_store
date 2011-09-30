@@ -6,4 +6,6 @@ gem 'sqlite3'
 
 gem 'annotate'
 
+gem 'paperclip'
+
 

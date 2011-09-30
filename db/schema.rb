@@ -11,10 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110930055404) do
+ActiveRecord::Schema.define(:version => 20110930062116) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "images", :force => true do |t|
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_size"
+    t.integer  "product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -23,6 +32,11 @@ ActiveRecord::Schema.define(:version => 20110930055404) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "occasions_products", :id => false, :force => true do |t|
+    t.integer "occasion_id"
+    t.integer "product_id"
   end
 
   create_table "products", :force => true do |t|
