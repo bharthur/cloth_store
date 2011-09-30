@@ -1,5 +1,7 @@
 ClothStore::Application.routes.draw do
 
+  devise_for :admins
+
   get "products/show"
 
   get "products/index"

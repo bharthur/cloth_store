@@ -8,4 +8,6 @@ gem 'annotate'
 
 gem 'paperclip'
 
+gem 'devise'
+
 
