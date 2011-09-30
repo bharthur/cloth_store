@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: occasions
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 class Occasion < ActiveRecord::Base
 
 	attr_accessible :name

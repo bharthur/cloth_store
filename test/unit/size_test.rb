@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: sizes
+#
+#  id         :integer         not null, primary key
+#  size       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 require 'test_helper'
 
 class SizeTest < ActiveSupport::TestCase
