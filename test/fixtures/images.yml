@@ -1,0 +1,24 @@
+# == Schema Information
+#
+# Table name: images
+#
+#  id                 :integer         not null, primary key
+#  photo_file_name    :string(255)
+#  photo_content_type :string(255)
+#  photo_size         :integer
+#  product_id         :integer
+#  created_at         :datetime
+#  updated_at         :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  type: MyString
+  size: 1
+
+two:
+  name: MyString
+  type: MyString
+  size: 1
