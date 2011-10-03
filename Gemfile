@@ -11,3 +11,11 @@ gem 'paperclip'
 gem 'devise'
 
 
+group :development, :test do
+	gem 'rspec-rails'
+	gem 'ZenTest'
+	gem 'autotest-rails'
+	gem 'spork'
+end
+
+
