@@ -4,4 +4,10 @@ ClothStore::Application.routes.draw do
   
   root :to => "pages#home"
 
+  resources :categories
+  resources :products
+  resources	:occasions
+  resources :images
+  resources :sizes
+ 
 end
