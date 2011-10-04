@@ -16,6 +16,7 @@ end
 group :test do
   gem "shoulda-matchers"
   gem 'simplecov', :require => false
+  gem 'cover_me', '>= 1.2.0'
 end
 
 

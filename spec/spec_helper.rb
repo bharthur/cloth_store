@@ -1,10 +1,10 @@
+require 'cover_me'
 require 'rubygems'
 require 'spork'
 require 'paperclip/matchers'
 require 'simplecov'
 
 SimpleCov.start
-
 
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However, 
