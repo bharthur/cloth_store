@@ -1,5 +1,10 @@
 require 'rubygems'
 require 'spork'
+require 'paperclip/matchers'
+require 'simplecov'
+
+SimpleCov.start
+
 
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However, 
@@ -78,4 +83,8 @@ RSpec.configure do |config|
   # examples within a transaction, remove the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+end
+
+RSpec.configure do |config|
+config.include Paperclip::Shoulda::Matchers
 end

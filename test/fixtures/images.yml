@@ -5,7 +5,7 @@
 #  id                 :integer         not null, primary key
 #  photo_file_name    :string(255)
 #  photo_content_type :string(255)
-#  photo_size         :integer
+#  photo_file_size    :integer
 #  product_id         :integer
 #  created_at         :datetime
 #  updated_at         :datetime

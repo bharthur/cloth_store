@@ -14,7 +14,6 @@ class Occasion < ActiveRecord::Base
 
 	has_and_belongs_to_many :products, :join_table => :occasions_products
 
-	
 	validates :name, :presence => true,
 									 :length => {:maximum => 20}
 

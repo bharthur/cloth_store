@@ -6,6 +6,7 @@
 #  size       :string(255)
 #  created_at :datetime
 #  updated_at :datetime
+#  product_id :integer
 #
 
 class Size < ActiveRecord::Base
@@ -16,7 +17,5 @@ class Size < ActiveRecord::Base
 
 	validates :size, :presence => true,
 									 :length => {:maximum => 4}	
-
-
 
 end
