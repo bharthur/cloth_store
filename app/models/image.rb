@@ -17,8 +17,10 @@ class Image < ActiveRecord::Base
 	
 	attr_protected :photo_file_name, :photo_file_size, :photo_content_type
 	
-	has_attached_file :photo, :styles => { :medium => "300x300>", :thumb => "100x100>" }
-
+	has_attached_file :photo, :styles => { :medium => "300x300>", :thumb => "100x100>" },
+  :url => "/assets/products/:id/:style/:basename.:extension",  
+  :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
+	
 	validates_attachment_presence :photo
 	
 	validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
